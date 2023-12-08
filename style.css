@@ -1,0 +1,403 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    font-size: 15pt;
+    font-family: 'Nunito', sans-serif;
+}
+*{
+  padding: 0;
+  margin: 0 ;
+}
+.leftbar{
+  width: 20%;
+  height:100vh;
+  background: #74b9ff ;
+  position: fixed ;
+  color: white ;
+  left:0 ;
+  z-index: 20 ;
+  box-shadow :2px 0px 5px rgba(0,0,0,0.3);
+}
+.logo{
+  width: 100%;
+  height: 30px ;
+  text-align: center ;
+  margin-top: 20px ;
+  font-size: 22px ;
+  font-weight: bold ;
+  letter-spacing: 1px ;
+  box-shadow :0px 1px 0px rgba(0,0,0,0.3);
+}
+ul{
+  display: inline-block;
+  height: 100%;
+  margin-top: 10px ;
+  text-align: center ;
+  width: 100%;
+}
+ul a{
+  text-decoration: none ;
+  display: block ;
+  padding: 10px ;
+  color: white ;
+  font-size: 18px ;
+  margin: 10px auto ;
+  transition: 0.5s ease-in-out ;
+}
+ul a:hover{
+  background: white ;
+  color: #000;
+}
+ul a.active {
+  background: white ;
+  color: #000;
+}
+.topbar{
+  position: fixed ;
+  width: 80%;
+  height: 60px ;
+  float: right ;
+  display: flex ;
+  justify-content: space-between ;
+  align-items: center ;
+  position: relative ;
+  box-shadow :0px 2px 5px rgba(0,0,0,0.3);
+}
+.title{
+  width: 100px ;
+  height: 100%;
+  margin-left: 50px ;
+  display: flex ;
+  color: #0984e3 ;
+  justify-content :center ;
+  align-items: center ;
+  font-weight: bold ;
+  font-size: 25px ;
+}
+.fa-bars{
+  margin: 10px ;
+  font-size: 16px ;
+  display: none ;
+  color: #000;
+}
+.pic{
+  width: 100px ;
+  height: 50px ;
+  margin-right: 10px ;
+  display: flex ;
+  align-items: center ;
+  justify-content: space-around ;
+}
+.pic img{
+  height: 50px ;
+  width: 50px ;
+  border-radius :50%;
+}
+.search{
+  width: 100px ;
+  height: 100%;
+  display:flex ;
+  align-items: center ;
+  justify-content: center ;
+  position: relative ;
+}
+.search input{
+  border: 1px solid black ;
+  outline: none ;
+  border-radius :20px ;
+  padding: 5px 10px ;
+  background: none;
+}
+.fa-search{
+  position: absolute ;
+  left: 115px ;
+  font-size: 15px ;
+}
+#check{
+  display:none ;
+}  
+  
+.container{
+  width: 80%;
+  height: 200px ;
+  float: right ;
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  margin-top: 20px  ;
+  
+} 
+.box{
+  width: 200px ;
+  height: 100px ;
+  margin: 10px auto ;
+  display: flex ;
+  align-items: center ;
+  justify-content: space-around;
+  border-radius :10px ;
+  box-shadow :0px 2px 10px rgba(0,0,0,0.2 );
+}
+.box:hover{
+  background: #74b9ff ;
+  color: #fff;
+}
+.box:hover .fa{
+  color: #fff ;
+}
+.data{
+  text-align: center ;
+}
+.box .fa{
+  font-size: 30px ;
+  color: #0984e3;
+}
+.box h3{
+  font-weight: bold ;
+  font-size: 30px ;
+  letter-spacing: 1px ;
+}
+.box p{
+  font-size: 18px ;
+  margin-top: 5px ;
+}
+  
+.pbox{
+  width: 80%;
+  height: 400px;
+  float: right ;
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+} 
+.detailbox{
+  width: 90%;
+  height: 100%;
+  box-shadow :0px 2px 10px rgba(0,0,0,0.3 );
+  border-radius :10px ;
+} 
+.detailbox .record {
+  display: flex ;
+  justify-content: space-between ;
+  padding: 10px 30px ;
+  border-bottom: 1px solid black ;
+}
+.record a{
+  font-size: 16px ;
+  color: #fff;
+  text-decoration: none ;
+  background: #74b9ff ;
+  text-align: center ;
+  padding:5px 15px ;
+  border-radius :20px ;
+}
+
+
+.databox{
+  display: flex ;
+  justify-content: space-around;
+}
+.topic{
+  margin: 10px ;
+}
+.pdata li{
+  list-style: none ;
+  padding: 10px 20px ;
+  text-align: center ;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media(max-width:720px){
+  .leftbar{
+    width:40%;
+    z-index: 20 ;
+    position: fixed ;
+    
+    left: -300px;
+    box-shadow :0px 2px 5px rgba(0,0,0,0.3);
+    transition: 0.5s ease;
+  }
+  #back{
+    position: fixed ;
+    
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display:none ;
+    z-index: 1 ;
+    transition: 1s ease-in-out ;
+  }
+  .topbar{
+
+    width: 100%;
+    
+  }
+  .search{
+    display: none ;
+  }
+  .title{
+    width: 230px;
+    margin-left: 0 ;
+    display:flex ;
+    justify-content: space-around ;
+  }
+  .fa-bars{
+  margin: 10px ;
+  font-size: 16px ;
+  display: block ;
+  
+  } 
+  .search.fa-search{
+    display: block ;
+  }
+  .pic img{
+  height: 40px ;
+  width: 40px ;
+  border-radius :50%;
+}
+.pic .fa-bell{
+  font-size: 15px;
+  margin-left: 20px ;
+}
+#check{
+  display: none ;
+}
+#check:checked ~ .leftbar{
+      left: 0 ;
+}
+#check:checked ~ #back{
+    display: block ;
+}
+
+.container{
+  width: 100%;
+  height: auto ;
+  float: right ;
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  flex-direction: column ;
+  margin-top: 20px ;
+} 
+.box{
+  width: 300px ;
+  height: 120px ;
+  margin: 20px  auto ;
+  transition: 0.5s ease-in-out ;
+}
+.box .fa{
+  font-size: 40px  ;
+}
+.box:hover{
+  background: #74b9ff ;
+  color: #fff;
+  box-shadow :none;
+}
+.box:hover .fa{
+  color: #fff ;
+}
+.pbox{
+  width: 100%;
+  height: 400px;
+  float: right ;
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  margin : 20px auto ;
+} 
+.detailbox{
+  width: 80%;
+  height: 100%;
+  box-shadow :0px 2px 10px rgba(0,0,0,0.3 );
+  border-radius :10px ;
+  display: flex ;
+  flex-direction: row ;
+  flex-wrap: wrap ;
+  overflow-x: scroll;
+  margin-bottom : 20px  ;
+  
+} 
+.detailbox .record {
+  display: flex ;
+  justify-content: space-between ;
+  padding: 10px 30px ;
+  border-bottom: 1px solid black ;
+  font-size: 16px ;
+  text-align: justify ;
+}
+.record h3{
+  width: 500px ;
+  height: 100%;
+  margin-top: 10px ;
+}
+.record a{
+  width: 100px ;
+  margin-top:  10px ;
+  color: #fff;
+  text-decoration: none ;
+  background: #74b9ff ;
+  text-align: center ;
+  padding: 10px auto;
+}
+.databox{
+  display: flex ;
+  justify-content: space-around;
+}
+.topic{
+  margin: 10px ;
+  display: flex ;
+}
+.pdata{
+  display: flex ;
+  flex-wrap: wrap ;
+  width: 200px;
+  text-align: center ;
+  padding: 10px ;
+}
+.pdata li{
+  list-style: none ;
+  padding: 10px 20px ;
+  text-align: center ;
+}
+
+
+}    
